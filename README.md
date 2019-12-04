@@ -1,4 +1,4 @@
-# Gun Violence Prediction by Long Short-Term Memory and Beyond
+### Gun Violence Prediction by Long Short-Term Memory and Beyond
 
 * Visualization of gun-related violence recorded in previous years, categorized by fatality, year, location(state), time(month)
 
