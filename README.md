@@ -1,9 +1,9 @@
 ### Gun Violence Prediction by Long Short-Term Memory and Beyond
 
 Team members:
-Yifan Jiang(yueruchen)
-Yijun Zhang(YJZFlora)
-Yiwen Tang(tyw0628)
+Yifan Jiang(yueruchen),
+Yijun Zhang(YJZFlora),
+Yiwen Tang(tyw0628),
 Weicheng Gan(MatthewGan923)
 
 * Visualization of gun-related violence recorded in previous years, categorized by fatality, year, location(state), time(month)
