@@ -1,0 +1,531 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Gun Violence Study | Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!-- start header -->
+	<div class="header">
+			<header id="home">
+				<div class="bg_mask">
+				<div class="wrap clearfix">
+
+					<h1>Gun Violence in USA</h1>
+					<p>Gun Violence Prediction by Long Short-Term Memory and Beyond</p>
+					<h6> </h6>
+					<a href="#about" class="button scroll"><img src="images/down.png"></a>
+					<div class="clear"> </div>
+				</div>
+				</div>
+			</header>
+	</div>
+
+			<nav class="nav_wrapper">
+				<div class="wrap">
+
+					<a href="#" class="header_toggle">Menu</a>
+					<ul class="navigation">
+						<li class="scroll"><a href="#home">Home</a></li>
+						<li class="scroll"><a href="#about">About</a></li>
+						<li class="scroll"><a href="#services">Methodologies</a></li>
+						<li class="scroll"><a href="#portfolio">Visualization</a></li>
+						<li class="scroll"><a href="https://github.com/YJZFlora/Gun_Violence_Data_Mining">Github</a></li>
+						<div class="clear"> </div>
+					</ul>
+
+					<div class="clear"> </div>
+				</div>
+			</nav>
+
+	<!------nav_js scripts---->
+	<script src="js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.singlePageNav.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-----end nav js------>
+	<!-----start-about------>
+		<div class="about" id="about">
+			<div class="wrap">
+				<h2>Introduction</h2>
+
+				<h6> </h6>
+				<p class="para_a">Visualization of gun-related violence recorded in previous years, categorized by fatality, year, location(state), time(month)
+</p>
+				<p class="para_a">We train a Long Short-Term Memory model based on records from previous years and such model is able to make prediction.
+</p>
+
+				<!---strat-top-grids---->
+				<div class="top-grids">
+					<div class="top-grid">
+						<a class="icon monitor" href="https://en.wikipedia.org/wiki/Long_short-term_memory"> </a>
+						<a href="#">LSTM</a>
+						<p>A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.
+</p>
+					</div>
+					<div class="top-grid">
+						<a class="icon monitor" href="https://github.com/jamesqo/gun-violence-data"> </a>
+						<a href="#">DataSet</span></a>
+						<p>We find that each state and each month have some internal tendency by visualization results. Therefore, we collect the killed number sequence by the order of year and then split the data to per state and per month, thus we got 50 states with each has 12 months data, 600 sequences. Each data contains the killed number from 2013-2018 years. We further split the whole dataset into training and testing set to evaluate our method.
+</p>
+					</div>
+					<div class="top-grid">
+						<a class="icon monitor" > </a>
+						<a href="#">Experiment Setting</span></a>
+						<p>We use Stochastic Gradient Descent (SGD) as the optimization method, with momenta = 0.9 and weight decay = 5e-03. We use 0.1 learning rate and decay it by 1/10 on 100 and 200 training epochs. Since the dataset is small, we conduct data augmentation by randomly plus or minus 0~3 for each killed number sequence.</p>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<!---End-top-grids---->
+			</div>
+			<div class="grids-of_4">
+				<div class="wrap">
+					<div class="grid_of_1">
+						
+						<div class="sub_grid">
+							<span>13,973</span>
+							<p>Gun Violence Death in 2019</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="grid_of_1">
+						
+						<div class="sub_grid">
+							<span>389</span>
+							<p>Number of Mass Shootings in 2019</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="grid_of_1">
+						
+						<div class="sub_grid">
+							<span>710</span>
+							<p>Number of Teenagers Killed in 2019</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="grid_of_1">
+						
+						<div class="sub_grid">
+							<span>27,291</span>
+							<p>Number of Injuries in 2019</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="clear"> </div>
+				</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: {
+
+		    		portrait: {
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		},
+		    		landscape: {
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: {
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+
+		});
+	</script>
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	<!-----end-about--------->
+	<!-----start-services----->
+	<div class="services" id="services">
+		<h3 class="heading"> Methodologies </h3>
+		<p class="desc">Long Short-Term Memory </p>
+		<h6> </h6>
+		<div class="wrap">
+		<div class="service_grids">
+			<div class="grid1">
+				
+				<div class="grid_sub">
+					<h3><span>LSTM Model Structure</span></h3>
+					<img src="images/lstm.png">
+					
+				</div>
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				<div class="grid_sub">
+					<h3><span>Training </span></h3>
+					<img src="images/train.png">
+				</div>
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				<div class="grid_sub">
+					<h3><span>Testing</span></h3>
+					<img src="images/test.png">
+				</div>
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				
+				
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				
+				
+			<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				
+				
+					<div class="clear"> </div>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		</div>
+	<div class="slider2">
+		<div class=" bg_mask1 bg_mask2">
+			<div class="wrap">
+				<p><img src="images/lg.png">In this project, we analyze the deaths caused by gun from 2013 to 2018. Specifically, we give a detailed discussion on the deaths number on different states and visualize the tendency for each month. We find that more people are killed on summer and less people are killed on February.  </p>
+				<p>Furthermore, we count the killed number on each state and find that California, Texas, Florida are the Top. 3 state that gun violence occurs. Moreover, we analyze the age distribution and found juvenile criminals are surprisingly accounts for 11%, which should be taken seriously.<img src="images/lg.png"></p>
+				<h6> </h6>
+				<h4>Conclusion</h4>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!----end-services--------->
+	<!----start-team--------->
+
+			</div>
+		</div>
+	<!-- Owl Carousel Assets -->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		     <!-- Owl Carousel Assets -->
+		    <!-- Prettify -->
+		    <script src="js/owl.carousel.js"></script>
+		        <script>
+		    $(document).ready(function() {
+
+		      $("#owl-demo").owlCarousel({
+		        items : 3,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav : false,
+			    scrollPerPage : false,
+			    pagination : true,
+    			paginationNumbers: false,
+		      });
+
+		    });
+		    </script>
+		   <!-- //Owl Carousel Assets -->
+	<!----end-team--------->
+	<div id="cbp-so-scroller" class="cbp-so-scroller">
+        <!--Portfolio-->
+        <div id="portfolio" class="clearfix">
+            <div class="portfolio-bg"> </div>
+            <div class="typo1">
+                <div class="wrapper clearfix">
+                    <div class="section-title">
+                       <h3 class="heading">Visualization</h3>
+					   <p class="desc"></p>
+					   <h6> </h6>
+                    </div><!--end:section-title-->
+
+                    <div id="options" class="clearfix">
+                        <ul id="filters" class="option-set clearfix" data-option-key="filter">
+                        	 <li><a href="#filter" data-option-value=".date">Date</a></li>
+                            <li><a href="#filter" data-option-value=".state">States</a></li>
+                            <li><a href="#filter" data-option-value=".age">Age</a></li>
+							<li><a href="#filter" data-option-value="">All</a></li>
+							
+                        </ul><!--end:filters-->
+                    </div>
+
+                </div><!--end:wrapper-->
+
+                <ul id="container" class="clickable cs-style-5 grid clearfix">
+
+                    
+                    <li class="element date">
+                      <figure>
+                          <img src="images/peoplekill.png" alt="" />
+                          <figcaption>
+                                <h3>People Killed By Gun Violence</h3>
+                                <div class="meta-box clearfix">
+
+                                </div>
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="images/peoplekill.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+                    <li class="element age">
+                      <figure>
+                          <img src="images/generalage.png" alt="" />
+                          <figcaption>
+                                <h3>Age Distribution</h3>
+                                <div class="meta-box clearfix">
+                                    
+                                </div>
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="images/generalage.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+                    
+
+                   
+                    
+
+                    <li class="element age">
+                      <figure>
+                          <img src="images/age.png" alt="" />
+                          <figcaption>
+                                <h3>Crime Participant Age</h3>
+                                <div class="meta-box clearfix">
+                                 
+                                </div>
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="images/age.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+					<li class="element state">
+                      <figure>
+                          <img src="images/fiveStates.png" alt="" />
+                          <figcaption>
+                                <h3>Top 5 States of People Killed</h3>
+                                <div class="meta-box clearfix">
+                                   
+                                </div>
+                                <footer>
+                                     <div id="nivo-lightbox-demo"> <p> <a href="images/fiveStates.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+					<li class="element state">
+                      <figure>
+                          <img src="images/all_states.png" alt="" />
+                          <figcaption>
+                                <h3>Total Death By Gun in All States</h3>
+                                <div class="meta-box clearfix">
+								
+                                </div>
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="images/all_states.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+
+					<li class="element state">
+                      <figure>
+                          <img src="images/2017states.png" alt="" />
+                          <figcaption>
+                                <h3>States Death by Gun 2017</h3>
+                                <div class="meta-box clearfix">
+
+                                </div>
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="images/2017states.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+					<li class="element state">
+                      <figure>
+                          <img src="images/2016states.png" alt="" />
+                          <figcaption>
+                                <h3>States Death by Gun 2017</h3>
+                                <div class="meta-box clearfix">
+                         
+                                </div>
+                                <footer>
+                                     <div id="nivo-lightbox-demo"> <p> <a href="images/2016states.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+                    <li class="element state">
+                      <figure>
+                          <img src="images/2015.png" alt="" />
+                          <figcaption>
+                                <h3>States Death by Gun 2015</h3>
+                                <div class="meta-box clearfix">
+                  
+                                </div>
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="images/2015.png" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="element state">
+                      <figure>
+                          <img src="images/2014states.pgn" alt="" />
+                          <figcaption>
+                                <h3>States Death by Gun 2015</h3>
+                                <div class="meta-box clearfix">
+                                    
+                                </div>
+                                <footer>
+                                     <div id="nivo-lightbox-demo"> <p> <a href="images/2014states.pgn" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+                    <li class="element web-design">
+                      <figure>
+                          <img src="images/pf-10.jpg" alt="" />
+                          <figcaption>
+                                <h3><a href="#">This is project name</a></h3>
+                                <div class="meta-box clearfix">
+                                    <span class="entry-categories"><a href="#">print art</a></span>
+                                    &nbsp;/&nbsp;
+                                    <span class="entry-categories"><a href="#">photo</a></span>
+                                </div>
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="images/pf-10.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                </footer>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <div class="clear"> </div>
+                </ul> <!-- #container -->
+
+            </div><!--end:typo1-->
+        </div>
+        <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
+		});
+		</script>
+        <!-----portfolio_pop_up----->
+        <div id="small-dialog2" class="mfp-hide">
+					<div class="pop_up2">
+					<div class="p-inline-content" >
+                                <div class="p-left-col">
+                                    <ul class="clearfix">
+                                        <li><img src="images/RoranPreview.jpg" alt="" /></li>
+
+                                    </ul>
+                                </div><!--end:p-left-col-->
+                                <div class="p-right-col">
+                                    <div class="sticky-col">
+                                        <header>
+                                            <h3 class="pf-detail-title">Grid template</h3>
+                                            <a href="#">http://goo.gl/7sHm9l</a>
+                                        </header>
+                                        <ul class="social-link clearfix">
+                                            <li><a href="#"><img src="images/Facebook.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="images/Dribbble.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="images/Google.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="images/Twitter.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="images/Foursquare.png" alt="" /></a></li>
+                                            <div class="clear"> </div>
+                                        </ul>
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                                    </div><!--end:sticky-col-->
+                                </div><!--end:p-right-col-->
+                                <div class="clear"> </div>
+                            </div>
+                           </div>
+           </div>
+           <!-----end_pop_up------>
+    </div><!--end:cbp-so-scroller-->
+      <!-- portfolio_script_javascript-->
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/custom.js"></script>
+
+
+	<div class="footer">
+   	    <div class="wrap">
+   	    	<div class="footer-left">
+
+			</div>
+	
+	    <!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+		 		};
+
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+		</script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+
+   </div>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
